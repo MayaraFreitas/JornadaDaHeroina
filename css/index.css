@@ -1,0 +1,144 @@
+:root {
+  --light-orange: #FFC7B7;
+  --orange: #FDAC94;
+  --dark-orange: #FDAC94;
+  --super-dark-orange: #F7988A;
+  --red: #C34149;
+  --light-red: #D94A53;
+  --super-dark-blue: #02012D;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--super-dark-blue);
+  background-color: var(--light-orange);
+  max-width: 1200px;
+  padding: 5%;
+  margin: auto;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--orange);
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+  background-color: var(--orange);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+}
+
+button {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--light-orange);
+  background-color: var(--red);
+  border: none;
+  padding: 24px 36px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--light-red);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 1em;
+  margin: 0;
+}
+
+h1 .large-title {
+  font-size: 9rem;
+  line-height: 1em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1em;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1em;
+  margin: 0;
+  color: var(--red);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1em;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1em;
+  margin: 0;
+  color: var(--red);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.vertical-title-container {
+  margin-left: 50px;
+  margin-right: 24px;
+}
+
+.vertical-title-container .vertical-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 7rem;
+  line-height: 0em;
+  margin: 0;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding-left: 40px;
+  color: var(--super-dark-orange);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 64px;
+}
+
+.section .section-title {
+  margin-bottom: 32px;
+}
+
+.section .section-title h2 {
+  margin-top: 12px;
+}
+
+.section .section-title h3 {
+  max-width: 500px;
+}
+
+.section .section-content {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=index.css.map */
