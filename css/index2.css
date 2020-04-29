@@ -17,6 +17,19 @@ body {
   margin: auto;
 }
 
+body::-webkit-scrollbar-track {
+  background-color: var(--orange);
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+  background-color: var(--orange);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+}
+
 .navbar-desktop a {
   float: right;
   display: block;
@@ -139,8 +152,80 @@ p {
   padding: 5%;
 }
 
+.vertical-title-container {
+  margin-left: 50px;
+  margin-right: 24px;
+}
+
+.vertical-title-container .vertical-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 7rem;
+  line-height: 0em;
+  margin: 0;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding-left: 40px;
+  color: var(--super-dark-orange);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.vertical-title-container {
+  margin-left: 50px;
+  margin-right: 24px;
+}
+
+.vertical-title-container .vertical-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 7rem;
+  line-height: 0em;
+  margin: 0;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding-left: 40px;
+  color: var(--super-dark-orange);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 64px;
+}
+
+.section .section-title {
+  margin-bottom: 32px;
+}
+
+.section .section-title h2 {
+  margin-top: 12px;
+}
+
+.section .section-title h3 {
+  max-width: 500px;
+}
+
+.section .section-content {
+  margin-left: 20px;
+}
+
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -149,22 +234,22 @@ footer {
   color: var(--white);
 }
 
-footer .row {
-  margin-left: 40px;
+footer .info {
+  padding-left: 40px;
 }
 
 footer .links {
-  margin-top: 30px;
+  padding-top: 40px;
   font-size: 16px;
   line-height: 19px;
 }
 
 footer .links .link {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
-footer .logo {
-  margin-top: 20px;
+.logo {
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,12 +259,12 @@ footer .logo {
   width: 500px;
 }
 
-footer .logo img {
+.logo img {
   width: 58px;
   height: 58px;
 }
 
-footer .logo .title {
+.logo .title {
   padding-left: 15px;
   font-size: 20px;
 }

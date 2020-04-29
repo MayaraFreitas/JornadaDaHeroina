@@ -157,6 +157,29 @@ p {
   margin-left: 20px;
 }
 
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 64px;
+}
+
+.section .section-title {
+  margin-bottom: 32px;
+}
+
+.section .section-title h2 {
+  margin-top: 12px;
+}
+
+.section .section-title h3 {
+  max-width: 500px;
+}
+
+.section .section-content {
+  margin-left: 20px;
+}
+
 .content {
   padding: 5%;
 }

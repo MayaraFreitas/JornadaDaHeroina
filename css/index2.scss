@@ -16,6 +16,17 @@ body {
     max-width: 1200px;
     margin: auto;
   }
+body::-webkit-scrollbar-track {
+    background-color: var(--orange);
+}
+body::-webkit-scrollbar {
+  width: 16px;
+  background-color: var(--orange);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--red);  
+}
+
 
 .navbar-desktop{
     a {
@@ -136,13 +147,77 @@ p {
     line-height: 1.55em;
     margin-top: 0;
 }
+
 .content{
-    padding: 5%;
+    padding: 5%; 
 }
 
+.vertical-title-container {
+    margin-left: 50px;
+    margin-right: 24px;
+    
+    .vertical-title {
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 7rem;
+      line-height: 0em;
+      margin: 0;
+      transform: scale(-1,-1);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      padding-left: 40px;
+      color: var(--super-dark-orange);
+      width: fit-content;
+      white-space: nowrap;
+      
+    }
+  }
+
+  .vertical-title-container {
+    margin-left: 50px;
+    margin-right: 24px;
+    
+    .vertical-title {
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 7rem;
+      line-height: 0em;
+      margin: 0;
+      transform: scale(-1,-1);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      padding-left: 40px;
+      color: var(--super-dark-orange);
+      width: fit-content;
+      white-space: nowrap;
+      
+    }
+  }
+  
+.section {
+    display: flex;
+    padding-top: 64px;
+    
+    .section-title {
+      margin-bottom: 32px;
+  
+      h2 {
+        margin-top: 12px;
+      }
+      h3 {
+        max-width: 500px;
+      }
+    }
+    .section-content {
+      margin-left: 20px;
+      
+      .content-container {
+        
+      }
+    }
+}
 
 footer{
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -150,32 +225,33 @@ footer{
     background-color: var(--super-dark-blue);
     color: var(--white);
 
-    .row{
-        margin-left: 40px;
+    .info{
+        padding-left: 40px;
     }
 
     .links{
-        margin-top: 30px;
+        padding-top: 40px;
         font-size: 16px;
         line-height: 19px;
         
         .link{
-          margin-top: 20px;
+            padding-top: 20px;
         }
     }
-    .logo{
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        width: 500px;
+}
 
-        img{
-            width: 58px;
-            height: 58px;
-        }
-        .title{
-            padding-left: 15px;
-            font-size: 20px;
-        }
+.logo{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+
+    img{
+        width: 58px;
+        height: 58px;
+    }
+    .title{
+        padding-left: 15px;
+        font-size: 20px;
     }
 }
