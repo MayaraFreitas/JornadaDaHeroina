@@ -35,7 +35,7 @@ body {
 .navbar-mobile{
     display: none;
     background-color: var(--orange);
-    //z-index: 1999999999;
+    z-index: 1999999999;
 
     position: fixed;
     bottom: 0;
@@ -64,10 +64,118 @@ body {
 }
   
 @media(max-width: 480px) {
-    .navbar-desktop{
+    .navbar-desktop, footer{
         display: none;  
     }
     .navbar-mobile{
         display: block;  
+    }
+}
+
+
+button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--light-orange);
+    background-color: var(--red);
+    border: none;
+    padding: 24px 36px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--light-red);
+    }
+}
+  
+h1 {
+    font-weight: bold;
+    font-size: 5.5rem;
+    line-height: 1em;
+    margin: 0;
+    
+    .large-title {
+      font-size: 9rem;
+      line-height: 1em;
+    }
+}
+  
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1em;
+    margin: 0;
+}
+  
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1em;
+    margin: 0;
+    color: var(--red);
+}
+  
+h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1em;
+    margin: 0;
+}
+  
+h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1em;
+    margin: 0;
+    color: var(--red);
+}
+  
+p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.55em;
+    margin-top: 0;
+}
+.content{
+    padding: 5%;
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 294px;
+    background-color: var(--super-dark-blue);
+    color: var(--white);
+
+    .row{
+        margin-left: 40px;
+    }
+
+    .links{
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 19px;
+        
+        .link{
+          margin-top: 20px;
+        }
+    }
+    .logo{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        width: 500px;
+
+        img{
+            width: 58px;
+            height: 58px;
+        }
+        .title{
+            padding-left: 15px;
+            font-size: 20px;
+        }
     }
 }
