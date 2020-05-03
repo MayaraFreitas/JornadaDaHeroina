@@ -13,8 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--super-dark-blue);
   background-color: var(--light-orange);
-  max-width: 1200px;
-  margin: auto;
+  margin: 0px;
 }
 
 body::-webkit-scrollbar-track {
@@ -75,8 +74,8 @@ body::-webkit-scrollbar-thumb {
   color: var(--red);
 }
 
-@media (max-width: 480px) {
-  .navbar-desktop, footer {
+@media (max-width: 768px) {
+  .navbar-desktop, footer, .vertical-title-container {
     display: none;
   }
   .navbar-mobile {
@@ -150,31 +149,8 @@ p {
 
 .content {
   padding: 5%;
-}
-
-.vertical-title-container {
-  margin-left: 50px;
-  margin-right: 24px;
-}
-
-.vertical-title-container .vertical-title {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 7rem;
-  line-height: 0em;
-  margin: 0;
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-orientation: mixed;
-  padding-left: 40px;
-  color: var(--super-dark-orange);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  white-space: nowrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .vertical-title-container {
@@ -270,6 +246,10 @@ footer .links .link {
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
   height: 200px;
   margin-top: 15px;
   background: #FDAC94;
@@ -277,7 +257,67 @@ footer .links .link {
 
 .card .photo {
   width: 40%;
+  max-width: 200px;
   height: 100%;
   background: var(--super-dark-orange);
+}
+
+.card .episode-info {
+  width: 60%;
+  position: relative;
+}
+
+.card .episode-info div {
+  margin-left: 16px;
+}
+
+.card .episode-info .epp-number {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--red);
+}
+
+.card .episode-info .title {
+  padding-top: 16px;
+  font-size: 17px;
+  color: var(--red);
+}
+
+.card .episode-info .name {
+  padding-top: 4px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--super-dark-blue);
+}
+
+.card .episode-info .work-function {
+  padding-top: 4px;
+  font-size: 21px;
+  line-height: 23px;
+  color: var(--super-dark-blue);
+}
+
+.card .episode-info .description {
+  padding-top: 8px;
+  padding-right: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card .episode-info .company-name {
+  position: absolute;
+  bottom: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--red);
 }
 /*# sourceMappingURL=index2.css.map */

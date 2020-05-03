@@ -4,9 +4,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jornada Da Heroína - Podcast</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <link rel="stylesheet" type="text/css" href="../css/flexboxgrid.css"/>
         <link rel="stylesheet" type="text/css" href="../css/index2.css">
+
+        <script src="../js/jquery-3.5.0.min.js"></script>
     </head>
     <body>
         <!--[Start] NavBar-->
@@ -36,7 +39,6 @@
             </div>
         </div>
         <!--[End] NavBar-->      
-
         <!--[Start] Content-->
         <div class="content">
             <h1>Jornada da<br><span class="large-title">Heroína<span></h1>
@@ -67,32 +69,7 @@
                     <div class="content-container">
                       <!--AQUI VAI O CONTEÚDO DA SEÇÃO, COLUNAS E CARDS, VC PODE COLOCAR O CONTAINER DO GRID AQUI-->
 
-                      <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="box card">
-                                    <div class="photo"></div>
-                                    <div class="episode-info"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="box card">
-                                    <div class="photo"></div>
-                                    <div class="episode-info"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="box card">
-                                    <div class="photo"></div>
-                                    <div class="episode-info"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="box card">
-                                    <div class="photo"></div>
-                                    <div class="episode-info"></div>
-                                </div>
-                            </div>
-                        </div>
+                      <div id="cards" class="row"></div>
                         
 
                       <p>
@@ -107,7 +84,6 @@
                 </div>
         </div>
         <!--[End] Content-->
-
         <!--[Start] Footer-->
         <footer>
             <div class="info">
@@ -125,3 +101,5 @@
         <!--[End] Footer-->
     </body>
 </html>
+
+<script src="../js/index.js"></script>
