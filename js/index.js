@@ -1,11 +1,5 @@
 $(document).ready(function() {
-
-console.log("OI");
-
-for(i = 0; i < 5; i++){
-    $("#cards").append(getCardHtml());
-}
-
+    getInterviews();
 });
 
 function getCardHtml(){
@@ -14,14 +8,34 @@ function getCardHtml(){
     + "<div class=\"box card\">"
         + "<div class=\"photo\"></div>"
         + "<div class=\"episode-info\">"
-            + "<div class=\"epp-number\">#01</div>"
+            + "<div class=\"epp-number\">#_interviewNumber_</div>"
             + "<div class=\"title\">HEROÍNA</div>"
-            + "<div class=\"name\">Mayara Alves</div>"
-            + "<div class=\"work-function\">UX/Designer</div>"
-            + "<div class=\"description\">"
-                + "\"Apaixonada por solucionar problemas, e colocar tornar a experiênciaApaixonada por solucionar problemas, e colocar tornar a experiênciaApaixonada por solucionar problemas, e colocar tornar a experiência inesquecível"
-            + "</div>"
-            + "<div class=\"company-name\">Xxxxx Soluções</div>"
+            + "<div class=\"name\">_name_</div>"
+            + "<div class=\"work-function\">_workFunction_</div>"
+            + "<div class=\"description\">_description_</div>"
+            + "<div class=\"company-name\">_companyName_</div>"
         + "</div>"
     + "</div></div>";
+}
+
+function getInterviews(){
+    var flickerAPI = "https://api.sheetson.com/v1/sheets/Entrevistas?spreadsheetId=14HNQD6hduOtPvJzUX4nOmxFp071diarN1lVlyI6iadg";
+  $.getJSON( flickerAPI, {
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.results, function( i, item ) {
+
+        var row = getCardHtml();
+        row = row
+        .replace("_interviewNumber_", item.rowIndex)
+        .replace("_name_", item.Name)
+        .replace("_workFunction_", item.WorkFunction)
+        .replace("_description_", item.Description)
+        .replace("_companyName_", item.CompanyName);
+        $("#cards").append(row);
+      });
+    });
 }
