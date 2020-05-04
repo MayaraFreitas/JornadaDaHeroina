@@ -30,7 +30,7 @@ function getInterviews(){
 
         var row = getCardHtml();
         row = row
-        .replace("_interviewNumber_", item.rowIndex)
+        .replace("_interviewNumber_", item.Index)
         .replace("_name_", item.Name)
         .replace("_workFunction_", item.WorkFunction)
         .replace("_description_", item.Description)

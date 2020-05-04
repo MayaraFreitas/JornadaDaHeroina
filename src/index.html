@@ -4,86 +4,121 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jornada Da Heroína - Podcast</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <link rel="stylesheet" type="text/css" href="../css/flexboxgrid.css"/>
         <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+        <script src="../js/jquery-3.5.0.min.js"></script>
     </head>
     <body>
-      <!--[Start] Menu-->
-      <div class="topnav" id="myTopnav">
+        <!--[Start] NavBar-->
+        <div class="navbar-desktop">
         <a href="#">Organização</a>
         <a href="#">Realizadoras</a>
         <a href="#">Episódios</a>
-      </div>
-      <!--[End] Menu-->
-      <!--[Start] Content-->
-      <div class="content">
-        <h1>Jornada da<br><span class="large-title">Heroína<span></h1>
-  
-          <div style="margin: 32px 0">
-            <h3>Entrevistas com mulheres f#d@s da área de tecnologia</h3>
-          </div>
-
-          <div style="margin: 32px 0">
-            <button>Ouça agora</button>
-          </div>
-          
-          <div style="margin: 100px 0">
-            <h4>PRODUZIDO POR:</h4>
-            <div class="logo" style="margin: 20px 0">
-              <div><img src="../img/logo.jpg" alt="Smiley face" height="60" width="60"></div>
-              <div><span> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </span></div>
+        </div>
+        <div class="row navbar-mobile">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="row links">
+                        <div class="col-xs-4 link">
+                            <div class="box icon">X</div>
+                            <div class="box title">Episódios</div>   
+                        </div>
+                        <div class="col-xs-4 link">
+                            <div class="box icon">X</div>
+                            <div class="box title">Realizadoras</div>   
+                        </div>
+                        <div class="col-xs-4 link">
+                            <div class="box icon">X</div>
+                            <div class="box title">Organização</div>   
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div style="margin: 32px 0">
-            <h5>Gravado em 21/04/2020</h5>
-          </div>
-        
-          <div style="margin: 64px 0"></div>
-            
-          <div class="section">
-            <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
-            <div class="section-content">
-              <div class="section-title">
-                <h3>Nós sentamos com essas heroínas para ouvir suas histórias</h3>
-                <h2>Ouça o que elas tem a dizer</h2>
-              </div>
-              <div class="content-container">
-                <!--AQUI VAI O CONTEÚDO DA SEÇÃO, COLUNAS E CARDS, VC PODE COLOCAR O CONTAINER DO GRID AQUI-->
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum mauris
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum mauris
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum mauris
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum mauris
-                </p>
-              </div>
-            </div> 
-          </div>
-      </div>
-      <!--[End] Content-->
-      <!--[Start] Footer-->
-
-      <div class="row" style="background-color:#FFFFFF; width: 200px;">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
-          <div class="box">
-            
-          </div>
         </div>
-      </div>
-
-
-      <footer>
-       
+        <!--[End] NavBar-->      
+        <!--[Start] Content-->
+        <div class="content">
+            <h1>Jornada da<br><span class="large-title">Heroína<span></h1>
+            <div class="sub">
+                <h3>Entrevistas com mulheres f#d@s da área de tecnologia</h3>
+            </div>
+            <div class="listen-now">
+                <button>Ouça agora</button>
+            </div>
+            <div class="produced-by">
+                <h4>PRODUZIDO POR:</h4>
+                <div class="logo-small">
+                    <img src="../img/logo.jpg">
+                    <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                </div>
+            </div>
+            <!--[Start] Entrevistas-->
+            <div class="section">
+                <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
+                <div class="section-content">
+                    <div class="section-title">
+                        <h3>Nós sentamos com essas heroínas para ouvir suas histórias</h3>
+                        <h2>Ouça o que elas tem a dizer</h2>
+                    </div>
+                    <div class="content-container">
+                        <div id="cards" class="row"></div>
+                    </div>
+                </div> 
+            </div>
+            <!--[End] Entrevistas-->
+            <!--[Start] Organização-->
+            <div class="section">
+                <div class="vertical-title-container"><div class="vertical-title">Organização</div></div>
+                <div class="section-content">
+                    <div class="section-title">
+                        <h3>Nossa missão é lorem ipsum dolor amet</h3>
+                        <h2>Quem somos nós</h2>
+                        <div class="logo-big">
+                            <img src="../img/logo.jpg">
+                            <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum mauris, pulvinar a venenatis nec, eleifend vitae mauris. Curabitur accumsan augue vitae purus iaculis, et malesuada leo varius. Ut aliquet dignissim blandit. Quisque elit libero, ultricies vitae cursus non, egestas quis ligula. Ut eu porttitor dolor, at convallis eros. Fusce vel nibh vulputate, porttitor ex in, tempor ipsum. Pellentesque mi ante, bibendum iaculis tortor nec, volutpat placerat tellus.Quisque vehicula velit sed leo consectetur, ac gravida ante consequat. Vestibulum tempus, erat non tristique commodo, nisi ipsum porttitor est, sed volutpat lorem diam in lectus. Aliquam ut dolor non sem commodo cursus ac sit amet velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis hendrerit euismod. Morbi ac pretium quam. Duis ultricies ut risus ut consequat. Duis non ipsum id elit fermentum fermentum at ac metus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum mauris, pulvinar a venenatis nec, eleifend vitae mauris. Curabitur accumsan augue vitae purus iaculis, et malesuada leo varius. Ut aliquet dignissim blandit. Quisque elit libero, ultricies vitae cursus non, egestas quis ligula. Ut eu porttitor dolor, at convallis eros. Fusce vel nibh vulputate, porttitor ex in, tempor ipsum. Pellentesque mi ante, bibendum iaculis tortor nec, volutpat placerat tellus.Quisque vehicula velit sed leo consectetur, ac gravida ante consequat. Vestibulum tempus, erat non tristique commodo, nisi ipsum porttitor est, sed volutpat lorem diam in lectus. Aliquam ut dolor non sem commodo cursus ac sit amet velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis hendrerit euismod. Morbi ac pretium quam. Duis ultricies ut risus ut consequat. Duis non ipsum id elit fermentum fermentum at ac metus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--[End] Organização-->
+            <!--[Start] Hosts-->
+            <div class="section">
+                <div class="vertical-title-container"><div class="vertical-title">Hosts</div></div>
+                <div class="section-content">
+                    <div class="section-title">
+                        <h2>Realizadoras</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--[End] Hosts-->
         </div>
-        <div class="">
-          <div class=""> Episódios</div>
-          <div class=""> Realizadoras</div>
-          <div class=""> Organização</div>
-        </div>
-        <div class="">
-      </footer>
-      <!--[End] Footer-->
+        <!--[End] Content-->
+        <!--[Start] Footer-->
+        <footer>
+            <div class="info">
+                <div class="links">
+                    <div class="link">Episódios</div>
+                    <div class="link">Realizadoras</div>
+                    <div class="link">Organização</div>
+                </div>
+                <div class="logo-small">
+                    <img src="../img/logo.jpg">
+                    <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                </div>
+            </div>
+        </footer>
+        <!--[End] Footer-->
     </body>
 </html>
 
+<script src="../js/index.js"></script>
