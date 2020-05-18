@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <link rel="stylesheet" type="text/css" href="../css/flexboxgrid.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/generic.css">
         <link rel="stylesheet" type="text/css" href="../css/index.css">
 
         <script src="../js/jquery-3.5.0.min.js"></script>
@@ -14,9 +15,9 @@
     <body>
         <!--[Start] NavBar-->
         <div class="navbar-desktop">
-        <a href="#">Organização</a>
-        <a href="#">Realizadoras</a>
-        <a href="#">Episódios</a>
+        <a href="#hosts-section">Realizadoras</a>
+        <a href="#organization-section">Organização</a>
+        <a href="#interview-section">Episódios</a>
         </div>
         <div class="row navbar-mobile">
             <div class="col-xs-12">
@@ -56,7 +57,7 @@
                 </div>
             </div>
             <!--[Start] Entrevistas-->
-            <div class="section">
+            <div id ="interview-section" class="section">
                 <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
                 <div class="section-content">
                     <div class="section-title">
@@ -64,13 +65,13 @@
                         <h2>Ouça o que elas tem a dizer</h2>
                     </div>
                     <div class="content-container">
-                        <div id="cards" class="row"></div>
+                        <div id="interview-cards" class="row"></div>
                     </div>
                 </div> 
             </div>
             <!--[End] Entrevistas-->
             <!--[Start] Organização-->
-            <div class="section">
+            <div id="organization-section" class="section">
                 <div class="vertical-title-container"><div class="vertical-title">Organização</div></div>
                 <div class="section-content">
                     <div class="section-title">
@@ -91,12 +92,12 @@
             </div>
             <!--[End] Organização-->
             <!--[Start] Hosts-->
-            <div class="section">
+            <div id="hosts-section" class="section">
                 <div class="vertical-title-container"><div class="vertical-title">Hosts</div></div>
                 <div class="section-content">
                     <div class="section-title">
                         <h2>Realizadoras</h2>
-                        
+                            <div id="hosts-cards" class="row"></div>
                     </div>
                 </div>
             </div>
@@ -121,4 +122,5 @@
     </body>
 </html>
 
+<script src="../js/generic.js"></script>
 <script src="../js/index.js"></script>
