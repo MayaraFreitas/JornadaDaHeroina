@@ -1,6 +1,6 @@
 :root {
     --light-orange: #FFC7B7;
-    --orange: #FDAC94;
+    --orange: #ffbaa4;
     --dark-orange: #FDAC94;
     --super-dark-orange: #F7988A;
     --red: #C34149;
@@ -11,15 +11,6 @@
 
 .text-super-dark-blue{
     color: var(--super-dark-blue);
-}
-  
-@media(max-width: 768px) {
-    .navbar-desktop, footer, .vertical-title-container{
-        display: none;  
-    }
-    .navbar-mobile{
-        display: block;  
-    }
 }
 
 button {
@@ -43,6 +34,8 @@ button {
     height: 200px;
     margin-top: 15px;
     background: var(--dark-orange);
+
+   
     .photo{
         width: 40%;
         max-width: 200px;
@@ -110,13 +103,21 @@ button {
             color: var(--red);
         }
     }
+    
+}
+
+.organization-card:hover{
+    background: var(--orange);
+    .photo{
+        background: var(--dark-orange);
+    }
 }
 
 .hosts-card{
     width: 344px;
     height: 427px;
     margin-top: 25px;
-    background: var(--orange);
+    background: var(--dark-orange);
 
     .photo{
         width: 344px;
@@ -161,3 +162,11 @@ button {
         }
     }
 }
+
+@media(max-width: 1230px) {
+    .heroin-img{
+        display: none;  
+    }
+}
+
+.pointer {cursor: pointer;}

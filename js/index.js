@@ -5,8 +5,8 @@ $(document).ready(function() {
 
 function getInterviewsCardHtml(){
 
-    return "<div class=\"col-xs-12 col-md-6\">"
-    + "<div class=\"box organization-card\">"
+    return "<div class=\"col-xs-12 col-md-6\" onclick=\"redirectToEpisode(_episodeNumber_);\">"
+    + "<div class=\"box organization-card pointer\">"
         + "<div class=\"photo\"></div>"
         + "<div class=\"episode-info\">"
             + "<div class=\"epp-number\">#_interviewNumber_</div>"
@@ -35,7 +35,9 @@ function getInterviews(){
         .replace("_name_", isValid(item.Name) ? item.Name : "Anônimo")
         .replace("_workFunction_", isValid(item.WorkFunction) ? item.WorkFunction : "Anônimo")
         .replace("_description_", isValid(item.Description) ? item.Description : "Anônimo")
-        .replace("_companyName_", isValid(item.CompanyName) ? item.CompanyName : "Anônimo");
+        .replace("_companyName_", isValid(item.CompanyName) ? item.CompanyName : "Anônimo")
+        .replace("_episodeNumber_", item.rowIndex);
+        
         $("#interview-cards").append(row);
       });
     });
@@ -43,8 +45,8 @@ function getInterviews(){
 
 function getHostsCardHtml(){
   return "<div class=\"col-xs-12 col-md-6\">"
-    + "<div class=\"box hosts-card\">"
-    + "<div class=\"photo\"><img src=\"../img/hosts/_photo_\"></div>"
+    + "<div class=\"box hosts-card \">"
+    + "<div class=\"photo\"><img src=\"_photo_\"></div>"
     + "<div class=\"info\">"
     + "<div class=\"name\">_name_</div>"
     + "<div class=\"work-function\">_function_</div>"
@@ -66,7 +68,7 @@ function getHosts(){
       .replace("_name_", isValid(item.Name) ? item.Name : "Anônimo")
       .replace("_function_", isValid(item.Function) ? item.Function : "Anônimo")
       .replace("_description_", isValid(item.Description) ? item.Description : "[Sem Descrição]")
-      .replace("_photo_", isValid(item.Photo) ? item.Photo : "undefined-host.png")
+      .replace("_photo_", isValid(item.Photo) ? ("../img/hosts/" + item.Photo) : "../img/undefined-person.png")
       $("#hosts-cards").append(row);
     });
   });
@@ -82,4 +84,11 @@ function isValid(item){
 function scrollTo() {
   console.log('SCROOOLLLL: ');
   //$(id).scrollIntoView({behavior: "smooth"})
+}
+
+function redirectToEpisode(code) {
+  var array = window.location.pathname.split( '/' );
+  var newArray = array.slice(0, array.length - 1);
+  var newUrl = window.location.origin + newArray.join('/') + '/episode.html?value=' + code;
+  window.location.replace(newUrl);
 }

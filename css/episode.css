@@ -1,1 +1,21 @@
-/* No CSS *//*# sourceMappingURL=episode.css.map */
+.interview-photo img {
+  width: 250px;
+  height: 250px;
+}
+
+.interview-photo .work-function {
+  padding-top: 10px;
+  font-size: 21px;
+  line-height: 23px;
+  color: var(--super-dark-blue);
+}
+
+.interview-photo .recording-time {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  bottom: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--red);
+}
+/*# sourceMappingURL=episode.css.map */

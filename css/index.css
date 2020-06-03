@@ -1,6 +1,6 @@
 :root {
   --light-orange: #FFC7B7;
-  --orange: #FDAC94;
+  --orange: #ffbaa4;
   --dark-orange: #FDAC94;
   --super-dark-orange: #F7988A;
   --red: #C34149;
@@ -11,15 +11,6 @@
 
 .text-super-dark-blue {
   color: var(--super-dark-blue);
-}
-
-@media (max-width: 768px) {
-  .navbar-desktop, footer, .vertical-title-container {
-    display: none;
-  }
-  .navbar-mobile {
-    display: block;
-  }
 }
 
 button {
@@ -113,11 +104,19 @@ button:hover {
   color: var(--red);
 }
 
+.organization-card:hover {
+  background: var(--orange);
+}
+
+.organization-card:hover .photo {
+  background: var(--dark-orange);
+}
+
 .hosts-card {
   width: 344px;
   height: 427px;
   margin-top: 25px;
-  background: var(--orange);
+  background: var(--dark-orange);
 }
 
 .hosts-card .photo {
@@ -163,5 +162,15 @@ button:hover {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1230px) {
+  .heroin-img {
+    display: none;
+  }
+}
+
+.pointer {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
