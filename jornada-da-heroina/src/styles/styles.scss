@@ -1,0 +1,65 @@
+:root {
+    --light-orange: #FFC7B7;
+    --orange: #FDAC94;
+    --dark-orange: #FDAC94;
+    --super-dark-orange: #F7988A;
+    --red: #C34149;
+    --light-red: #D94A53;
+    --super-dark-blue: #02012D;
+    --white: #FFFFFF;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5.5rem;
+    line-height: 1em;
+    margin: 0;
+    
+    .large-title {
+      font-size: 9rem;
+      line-height: 1em;
+    }
+}
+  
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1em;
+    margin: 0;
+}
+  
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1em;
+    margin: 0;
+    color: var(--red);
+}
+  
+h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1em;
+    margin: 0;
+}
+  
+h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1em;
+    margin: 0;
+    color: var(--red);
+}
+  
+p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.55em;
+    margin-top: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--super-dark-blue);
+    background-color: var(--light-orange);
+    margin: 0px;
+}

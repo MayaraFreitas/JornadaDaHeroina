@@ -1,0 +1,77 @@
+<div class="content">
+    <!--[Start] Principal-->
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Jornada da<br><span class="large-title">Heroína</span></h1>
+            <div class="sub">
+                <h3>Entrevistas com mulheres f#d@s da área de tecnologia</h3>
+            </div>
+            <div class="listen-now">
+                <button>Ouça agora</button>
+            </div>
+        </div>
+        <div class="col-md-6 heroin-img">
+            <img src="../../../assets/img/heroina_head_page.png">
+        </div>
+        <div class="produced-by">
+            <h4>PRODUZIDO POR:</h4>
+            <div class="logo">
+                <img src="../../../assets/img/logo.jpg">
+                <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+            </div>
+        </div>
+    </div>
+    <!--[End] Principal-->
+    <!--[Start] Entrevistas-->
+    <section id ="interview-section">
+        <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
+        <div class="section-content">
+            <div class="section-title">
+                <h3>Nós sentamos com essas heroínas para ouvir suas histórias</h3>
+                <h2>Ouça o que elas tem a dizer</h2>
+            </div>
+            <div *ngIf="interviews" class="row">
+                <div class="col-xs-12 col-md-6" *ngFor="let interview of interviews | async">
+                    <app-episode-card [interview]=interview></app-episode-card>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!--[End] Entrevistas-->
+    <!--[Start] Organização-->
+    <section id ="organization-section">
+        <div class="vertical-title-container"><div class="vertical-title">Organização</div></div>
+        <div class="section-content">
+            <div class="section-title">
+                <h3>Nossa missão é lorem ipsum dolor amet</h3>
+                <h2>Quem somos nós</h2>
+                <div class="logo-big">
+                    <img src="../../../assets/img/logo.jpg">
+                    <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                </div>
+                
+            </div>
+            <div *ngIf="organization" class="row ">
+                <p *ngFor="let row of organization | async">
+                    {{row.text}}
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--[End] Organização-->
+     <!--[Start] Hosts-->
+     <section id ="hosts-section">
+        <div class="vertical-title-container"><div class="vertical-title">Hosts</div></div>
+        <div class="section-content">
+            <div class="section-title">
+                <h2>Realizadoras</h2>
+            </div>
+            <div *ngIf="hosts" class="row">
+                <div class="col-xs-12 col-md-6" *ngFor="let host of hosts | async">
+                    <app-host-card [host]=host></app-host-card>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--[End] Hosts-->
+</div>

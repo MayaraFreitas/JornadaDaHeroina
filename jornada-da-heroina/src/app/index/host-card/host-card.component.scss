@@ -1,0 +1,50 @@
+
+.hosts-card{
+    width: 344px;
+    height: 427px;
+    margin-top: 25px;
+    background: var(--dark-orange);
+
+    .photo{
+        width: 344px;
+        height: 242px;
+        background: var(--super-dark-orange);
+        background: #F49081;
+        img{
+            width: 344px;
+            height: 242px;
+        }
+    }
+
+    .info{
+        width: 344px;
+        height: 182px;
+        padding-left: 16px;
+
+        .name{
+            padding-top: 15px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: var(--super-dark-blue);
+        }
+        .work-function{
+            padding-top: 5px;
+            font-size: 21px;
+            line-height: 23px;
+            color: var(--super-dark-blue);
+        }
+        .description{
+            padding-top: 10px;
+            padding-right: 16px;
+            font-size: 14px;
+            line-height: 18px;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+    }
+}

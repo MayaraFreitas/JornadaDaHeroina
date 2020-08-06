@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jornada Da Heroína - Podcast</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" type="text/css" href="../css/flexboxgrid.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/generic.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+        <script src="../js/jquery-3.5.0.min.js"></script>
+    </head>
+    <body>
+        <!--[Start] NavBar-->
+        <div class="navbar-desktop">
+        <a href="#hosts-section">Realizadoras</a>
+        <a href="#organization-section">Organização</a>
+        <a href="#interview-section">Episódios</a>
+        </div>
+        <div class="row navbar-mobile">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="row links">
+                        <div class="col-xs-4 link">
+                            <div class="box icon"><img src="../img/icons/icon-headphone.png"></div>
+                            <div class="box title">Episódios</div>   
+                        </div>
+                        <div class="col-xs-4 link">
+                            <div class="box icon"><img src="../img/icons/icon-people.png"></div>
+                            <div class="box title">Realizadoras</div>   
+                        </div>
+                        <div class="col-xs-4 link">
+                            <div class="box icon"><img src="../img/icons/icon-organization.png"></div>
+                            <div class="box title">Organização</div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--[End] NavBar-->      
+        <!--[Start] Content-->
+        <div class="content">
+            <!--[Start] Principal-->
+            <div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Jornada da<br><span class="large-title">Heroína<span></h1>
+                        <div class="sub">
+                            <h3>Entrevistas com mulheres f#d@s da área de tecnologia</h3>
+                        </div>
+                        <div class="listen-now">
+                            <button>Ouça agora</button>
+                        </div>
+                        <div class="produced-by">
+                            <h4>PRODUZIDO POR:</h4>
+                            <div class="logo-small">
+                                <img src="../img/logo.jpg">
+                                <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 heroin-img">
+                        <img src="../img/heroina_head_page.png">
+                    </div>
+                </div>
+            </div>
+            <!--[End] Principal-->
+            <!--[Start] Entrevistas-->
+            <div id ="interview-section" class="section">
+                <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
+                <div class="section-content">
+                    <div class="section-title">
+                        <h3>Nós sentamos com essas heroínas para ouvir suas histórias</h3>
+                        <h2>Ouça o que elas tem a dizer</h2>
+                    </div>
+                    <div class="content-container">
+                        <div id="interview-cards" class="row"></div>
+                    </div>
+                </div> 
+            </div>
+            <!--[End] Entrevistas-->
+            <!--[Start] Organização-->
+            <div id="organization-section" class="section">
+                <div class="vertical-title-container"><div class="vertical-title">Organização</div></div>
+                <div class="section-content">
+                    <div class="section-title">
+                        <h3>Nossa missão é lorem ipsum dolor amet</h3>
+                        <h2>Quem somos nós</h2>
+                        <div class="logo-big">
+                            <img src="../img/logo.jpg">
+                            <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                        </div>
+                        <div class="text-area">
+                            <p>
+                                Algumas alunas do campus que sentiam falta de mais mulheres nos cursos de tecnologia, levaram ao coordenador a ideia de incentivar as mulheres a não desistirem do curso. Foi assim que surgiu o grupo "Mais Mulheres na Tecnologia".
+                            </p>
+                            <p>
+                                A partir desse grupo nasceu o GIIMT (Grupo de Inclusão e Incentivo de Mulheres na Tecnologia), um sub-grupo de iniciação científica com a proposta de trazer conteúdos técnicos, envolvendo carreira, cursos, palestras para capacitar e dar mais segurança para as mulheres que pretendem seguir no ramo de tecnologia.
+                            </p>
+                            <p>
+                                Dentre os projetos planejados, a plataforma tem como proposta trazer mulheres de todas as idades, funções e níveis para um bate-papo, expondo para as ouvintes as barreiras, incertezas e felicidades durante a carreira profissional, retirando a visão distorcida que muitas vezes nós temos sobre o caminho a ser percorrido.
+                            </p>
+                            <p>
+                                Infelizmente durante o primeiro semestre de 2020 a professora orientadora Dra. Magda Vieira da Silva Oliveira nos deixou. Todos nós do GIIMT gostaríamos de utilizar esse espaço para agradecê-la, pois  esse projeto sequer teria nascido ou saído do papel sem a sua grande força de vontade. É com um grande peso no coração que deixamos aqui o nosso muito obrigado, e não deixaremos esse projeto morrer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--[End] Organização-->
+            <!--[Start] Hosts-->
+            <div id="hosts-section" class="section">
+                <div class="vertical-title-container"><div class="vertical-title">Hosts</div></div>
+                <div class="section-content">
+                    <div class="section-title">
+                        <h2>Realizadoras</h2>
+                            <div id="hosts-cards" class="row"></div>
+                    </div>
+                </div>
+            </div>
+            <!--[End] Hosts-->
+        </div>
+        <!--[End] Content-->
+        <!--[Start] Footer-->
+        <footer>
+            <div class="info">
+                <div class="links">
+                    <div class="link">Episódios</div>
+                    <div class="link">Realizadoras</div>
+                    <div class="link">Organização</div>
+                </div>
+                <div class="logo-small">
+                    <img src="../img/logo.jpg">
+                    <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+                </div>
+            </div>
+        </footer>
+        <!--[End] Footer-->
+    </body>
+</html>
+
+<script src="../js/generic.js"></script>
+<script src="../js/index.js"></script>
