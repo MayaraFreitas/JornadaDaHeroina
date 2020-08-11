@@ -1,0 +1,30 @@
+<div class="content">
+    <section>
+        <div class="vertical-title-container">
+            <div id="episode-number" class="vertical-title">Episódio {{episode.index}}</div>
+        </div>
+        <div class="section-content">
+            <div class="section-title">
+                <h3>Hoje nós falamos com</h3>
+                <h2>{{episode.name}}</h2>
+                
+            </div>
+            <div class="interview-photo">
+                <img src="../../../assets/img/interviews/{{episode.photo ? episode.photo : 'undefined-person.png'}}">
+                <div class="work-function">{{episode.workFunction}}</div>
+                <div class="recording-time">Gravado em {{episode.publishDate}}</div>
+            </div>
+            <!--
+            <div class="content-container">
+                <div id="" class="row">AAAAAAAAAAA</div>
+            </div>
+            -->
+            <div class="text-area section-title">
+                <h3>Sobre nosso papo</h3>
+                <p>
+                    {{episode.description}}
+                </p>
+            </div>
+        </div>
+    </section>
+</div>

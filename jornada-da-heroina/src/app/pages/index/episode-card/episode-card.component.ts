@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { InterviewCardModel } from '../models/interview-card-model';
+import { Router } from '@angular/router';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'app-episode-card',
@@ -9,9 +11,13 @@ import { InterviewCardModel } from '../models/interview-card-model';
 export class EpisodeCardComponent implements OnInit {
 
   @Input() interview: InterviewCardModel;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  gotoEpisode(idEpisode: number) {
+    this.router.navigate(['/episode'], {  queryParams: {  id: idEpisode - 1 } });
+    //this.router.navigate(['/episode', { id: idEpisode }]);
+  }
 }

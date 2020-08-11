@@ -1,16 +1,58 @@
 
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <!-- <meta charset="utf-8" /> -->
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-        <!-- <title>Jornada Da Heroína - Podcast</title> -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    </head>
-    <body>
-        <app-navbar></app-navbar>
-        <app-index></app-index>
-        <app-footer></app-footer>
-    </body>
-</html>
+ <!--[Start] NavBar-->
+<nav>
+     <!--[Start] NavBar-->
+ <div class="row navbar-desktop">
+    <div class="col-xs-1" (click)="goTo('index')">
+        <div class="box title pointer">
+            <span class="">Jordana da<br><span class="large-title">Heroína</span></span>
+        </div>
+    </div>
+    <div class="col-xs-11">
+        <div class="box">
+            <a routerLink="/index">Index</a>
+            <a routerLink="/home">Home</a>
+            <a routerLink="/episode">Episódio</a>
+            <!-- <a href="#hosts-section">Realizadoras</a>
+            <a href="#organization-section">Organização</a>
+            <a href="#interview-section">Episódios</a> -->
+        </div>
+    </div>
+</div>
+<div class="row navbar-mobile">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="row links">
+                <div class="col-xs-4 link">
+                    <div class="box icon"><img src="../img/icons/icon-headphone.png"></div>
+                    <div class="box title">Episódios</div>   
+                </div>
+                <div class="col-xs-4 link">
+                    <div class="box icon"><img src="../img/icons/icon-people.png"></div>
+                    <div class="box title">Realizadoras</div>   
+                </div>
+                <div class="col-xs-4 link">
+                    <div class="box icon"><img src="../img/icons/icon-organization.png"></div>
+                    <div class="box title">Organização</div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[End] NavBar-->      
+</nav>
 
+<router-outlet></router-outlet>
+<footer>
+    <div class="info">
+        <div class="links">
+            <div class="link">Episódios</div>
+            <div class="link">Realizadoras</div>
+            <div class="link">Organização</div>
+        </div>
+        <div class="logo-small">
+            <img src="../../../assets/img/logo.jpg">
+            <div class="title"> Grupo de Inclusão e Incentivo de Mulheres na Tecnologia </div>
+        </div>
+    </div>
+</footer>

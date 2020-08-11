@@ -1,0 +1,49 @@
+
+
+button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--light-orange);
+    background-color: var(--red);
+    border: none;
+    padding: 24px 36px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--light-red);
+    }
+}
+
+.logo{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+
+    img{
+        width: 58px;
+        height: 58px;
+    }
+    .title{
+        padding-left: 15px;
+        font-size: 22px;
+    }
+}
+
+.logo-big{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+
+    img{
+        width: 98px;
+        height: 98px;
+    }
+    .title{
+        padding-left: 15px;
+        font-size: 32px;
+    }
+}
+

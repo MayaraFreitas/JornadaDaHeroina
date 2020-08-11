@@ -1,5 +1,5 @@
-<div class="box organization-card pointer">
-    <div class="photo"><img src="../../../assets/img/interviews/undefined-person.png"></div>
+<div class="box organization-card pointer" (click)="gotoEpisode(interview.index)">
+    <div class="photo"><img src="../../../assets/img/interviews/{{interview.photo ? interview.photo : 'undefined-person.png'}}"></div>
     <div class="episode-info">
         <div class="epp-number">{{interview.index}}</div>
         <div class="title">HEROÍNA</div>

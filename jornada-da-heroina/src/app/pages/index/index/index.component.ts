@@ -15,6 +15,7 @@ export class IndexComponent implements OnInit {
 
   constructor(public db: AngularFireDatabase) {
     this.interviews = db.list('/interviews').valueChanges();
+    console.log('interviews: ', this.interviews);
     this.hosts = db.list('/hosts').valueChanges();
     this.organization = db.list('/organization').valueChanges();
   }
