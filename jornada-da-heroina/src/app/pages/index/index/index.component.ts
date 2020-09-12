@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-index',
@@ -9,18 +10,16 @@ import { AngularFireDatabase } from '@angular/fire/database';
 })
 export class IndexComponent implements OnInit {
 
-  interviews = new Observable<any[]>();
-  hosts = new Observable<any[]>();
   organization = new Observable<any[]>();
 
-  constructor(public db: AngularFireDatabase) {
-    this.interviews = db.list('/interviews').valueChanges();
-    console.log('interviews: ', this.interviews);
-    this.hosts = db.list('/hosts').valueChanges();
+  constructor(public db: AngularFireDatabase, private router: Router) {
     this.organization = db.list('/organization').valueChanges();
   }
 
   ngOnInit(): void {
   }
 
+  goTo(route: string) {
+    this.router.navigate(['/' + route]);
+  }
 }

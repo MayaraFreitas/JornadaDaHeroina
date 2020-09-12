@@ -7,7 +7,7 @@
                 <h3>Entrevistas com mulheres f#d@s da área de tecnologia</h3>
             </div>
             <div class="listen-now">
-                <button>Ouça agora</button>
+                <button (click)="goTo('episodes')">Ouça agora</button>
             </div>
         </div>
         <div class="col-md-6 heroin-img">
@@ -21,25 +21,7 @@
             </div>
         </div>
     </div>
-    <!--[End] Principal-->
-    <!--[Start] Entrevistas-->
-    <section id ="interview-section">
-        <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
-        <div class="section-content">
-            <div class="section-title">
-                <h3>Nós sentamos com essas heroínas para ouvir suas histórias</h3>
-                <h2>Ouça o que elas tem a dizer</h2>
-            </div>
-            <div *ngIf="interviews" class="row">
-                <div class="col-xs-12 col-md-6" *ngFor="let interview of interviews | async">
-                    <app-episode-card [interview]=interview></app-episode-card>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <!--[End] Entrevistas-->
-    <!--[Start] Organização-->
-    <section id ="organization-section">
+    <section>
         <div class="vertical-title-container"><div class="vertical-title">Organização</div></div>
         <div class="section-content">
             <div class="section-title">
@@ -58,20 +40,4 @@
             </div>
         </div>
     </section>
-    <!--[End] Organização-->
-     <!--[Start] Hosts-->
-     <section id ="hosts-section">
-        <div class="vertical-title-container"><div class="vertical-title">Hosts</div></div>
-        <div class="section-content">
-            <div class="section-title">
-                <h2>Realizadoras</h2>
-            </div>
-            <div *ngIf="hosts" class="row">
-                <div class="col-xs-12 col-md-6" *ngFor="let host of hosts | async">
-                    <app-host-card [host]=host></app-host-card>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!--[End] Hosts-->
 </div>

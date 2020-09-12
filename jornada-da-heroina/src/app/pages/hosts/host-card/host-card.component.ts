@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HostCardModel } from '../models/host-card-model';
+import { HostCardModel } from '../../index/models/host-card-model';
 
 @Component({
   selector: 'app-host-card',

@@ -1,0 +1,41 @@
+<!-- <audio #audioPlayer (timeupdate)='timeUpdate()' src="../../../../assets/audio/audio.mp3"></audio> -->
+<audio #audioPlayer (timeupdate)='timeUpdate()' src="https://www.computerhope.com/jargon/m/example.mp3"></audio>
+
+<div class="player">
+  <div class="container">
+    <div class="controller">
+      <div (click)="jumpTime(-10)" class="jump-time">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.9902 5V1L6.99023 6L11.9902 11V7C15.3002 7 17.9902 9.69 17.9902 13C17.9902 16.31 15.3002 19 11.9902 19C8.68023 19 5.99023 16.31 5.99023 13H3.99023C3.99023 17.42 7.57023 21 11.9902 21C16.4102 21 19.9902 17.42 19.9902 13C19.9902 8.58 16.4102 5 11.9902 5Z" fill="black"/>
+              <path d="M10.8903 16H10.0403V12.74L9.03027 13.05V12.36L10.8003 11.73H10.8903V16Z" fill="black"/>
+              <path d="M15.1703 14.24C15.1703 14.56 15.1403 14.84 15.0703 15.06C15.0003 15.28 14.9003 15.48 14.7803 15.63C14.6603 15.78 14.5003 15.89 14.3303 15.96C14.1603 16.03 13.9603 16.06 13.7403 16.06C13.5203 16.06 13.3303 16.03 13.1503 15.96C12.9703 15.89 12.8203 15.78 12.6903 15.63C12.5603 15.48 12.4603 15.29 12.3903 15.06C12.3203 14.83 12.2803 14.56 12.2803 14.24V13.5C12.2803 13.18 12.3103 12.9 12.3803 12.68C12.4503 12.46 12.5503 12.26 12.6703 12.11C12.7903 11.96 12.9503 11.85 13.1203 11.78C13.2903 11.71 13.4903 11.68 13.7103 11.68C13.9303 11.68 14.1203 11.71 14.3003 11.78C14.4803 11.85 14.6303 11.96 14.7603 12.11C14.8903 12.26 14.9903 12.45 15.0603 12.68C15.1303 12.91 15.1703 13.18 15.1703 13.5V14.24ZM14.3203 13.38C14.3203 13.19 14.3103 13.03 14.2803 12.9C14.2503 12.77 14.2103 12.67 14.1603 12.59C14.1103 12.51 14.0503 12.45 13.9703 12.42C13.8903 12.39 13.8103 12.37 13.7203 12.37C13.6303 12.37 13.5403 12.39 13.4703 12.42C13.4003 12.45 13.3303 12.51 13.2803 12.59C13.2303 12.67 13.1903 12.77 13.1603 12.9C13.1303 13.03 13.1203 13.19 13.1203 13.38V14.35C13.1203 14.54 13.1303 14.7 13.1603 14.83C13.1903 14.96 13.2303 15.07 13.2803 15.15C13.3303 15.23 13.3903 15.29 13.4703 15.32C13.5503 15.35 13.6303 15.37 13.7203 15.37C13.8103 15.37 13.9003 15.35 13.9703 15.32C14.0403 15.29 14.1103 15.23 14.1603 15.15C14.2103 15.07 14.2503 14.96 14.2703 14.83C14.2903 14.7 14.3103 14.54 14.3103 14.35V13.38H14.3203Z" fill="black"/>
+        </svg>
+      </div>
+      <div (click)="changeStatus()" class="play">
+        <span *ngIf="!playStatus" class="button-play"></span>
+        <span *ngIf="playStatus" class="button-pause"></span>
+      </div>
+      <div (click)="jumpTime(10)" class="jump-time">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 13C18 16.31 15.31 19 12 19C8.69 19 6 16.31 6 13C6 9.69 8.69 7 12 7V11L17 6L12 1V5C7.58 5 4 8.58 4 13C4 17.42 7.58 21 12 21C16.42 21 20 17.42 20 13H18Z" fill="black"/>
+          <path d="M10.86 15.94V11.67H10.77L9 12.3V12.99L10.01 12.68V15.94H10.86Z" fill="black"/>
+          <path d="M12.25 13.44V14.18C12.25 16.08 13.56 16 13.69 16C13.83 16 15.13 16.09 15.13 14.18V13.44C15.13 11.54 13.82 11.62 13.69 11.62C13.55 11.62 12.25 11.53 12.25 13.44ZM14.29 13.32V14.29C14.29 15.06 14.08 15.32 13.7 15.32C13.32 15.32 13.1 15.06 13.1 14.29V13.32C13.1 12.57 13.32 12.31 13.69 12.31C14.07 12.3 14.29 12.57 14.29 13.32Z" fill="black"/>
+        </svg>
+      </div>
+      <div class="audio-slider-container">
+        <span (click)="changeAudio()">
+          <img *ngIf="audio" src="../../../../assets/img/icons/icon-sound.png">
+          <img *ngIf="!audio" src="../../../../assets/img/icons/icon-mute.png">
+        </span>
+        <input #audioBar type="range" min="0" max="100" value="50" class="audio-slider">
+      </div>
+    </div>
+    <!-- <span class="timer"><span id="current-time">{{transformTime(time)}}</span> / <span id="duration-time">{{transformTime(duration)}}</span></span> -->
+  </div>
+  <div>
+    <span class="timer"><span id="current-time">{{transformTime(time)}}</span> / <span id="duration-time">{{transformTime(duration)}}</span></span>
+  </div>
+  <div>
+    <progress #progressBar value="{{time}}" max="{{duration}}"></progress>
+  </div>
+</div>

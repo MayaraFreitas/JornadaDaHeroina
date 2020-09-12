@@ -1,7 +1,7 @@
 :root {
     --light-orange: #FFC7B7;
     --orange: #FDAC94;
-    --dark-orange: #FDAC94;
+    --dark-orange: #ff9e82;
     --super-dark-orange: #F7988A;
     --red: #C34149;
     --light-red: #D94A53;
@@ -65,8 +65,12 @@ body {
 }
 
 .content{
-    padding: 5%; 
-    max-width: 1200px;
+    padding-left: 5%; 
+    padding-right: 5%; 
+    padding-top: 3%; 
+    padding-bottom: 5%; 
+
+    max-width: 2500px;
     //margin: auto;
 
     .listen-now, .sub{
@@ -74,7 +78,7 @@ body {
     }
 
     .produced-by{
-        margin: 70px 0;
+        margin: 0 0px 100px 0;
         color: var(--super-dark-blue);
     }
 
@@ -85,7 +89,7 @@ body {
 
 section {
     display: flex;
-    padding-top: 100px;
+    //padding-top: 100px;
     
     .section-title {
       margin-bottom: 32px;
@@ -130,4 +134,35 @@ section {
       white-space: nowrap;
       
     }
+}
+
+@media(max-width: 570px) {
+    .vertical-title-container {
+        display: none;  
+    }
+}
+
+@media(max-width: 768px) {
+    .content{
+        padding-bottom: 85px; 
+    }
+
+    section .section-content{
+        margin-left: 0px;
+    }
+
+    .heroin-img{
+        display: none;
+    }
+
+    h1{
+        font-size: 2.5rem; 
+        .large-title {
+            font-size: 5rem; 
+        }
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    
 }

@@ -1,7 +1,6 @@
 
  <!--[Start] NavBar-->
 <nav>
-     <!--[Start] NavBar-->
  <div class="row navbar-desktop">
     <div class="col-xs-1" (click)="goTo('index')">
         <div class="box title pointer">
@@ -10,45 +9,50 @@
     </div>
     <div class="col-xs-11">
         <div class="box">
-            <a routerLink="/index">Index</a>
-            <a routerLink="/home">Home</a>
-            <a routerLink="/episode">Episódio</a>
-            <!-- <a href="#hosts-section">Realizadoras</a>
-            <a href="#organization-section">Organização</a>
-            <a href="#interview-section">Episódios</a> -->
+            <a routerLink="/hosts">Hosts</a>
+            <a routerLink="/episodes">Episódios</a>
         </div>
     </div>
 </div>
-<div class="row navbar-mobile">
-    <div class="col-xs-12">
-        <div class="box">
-            <div class="row links">
-                <div class="col-xs-4 link">
-                    <div class="box icon"><img src="../img/icons/icon-headphone.png"></div>
-                    <div class="box title">Episódios</div>   
-                </div>
-                <div class="col-xs-4 link">
-                    <div class="box icon"><img src="../img/icons/icon-people.png"></div>
-                    <div class="box title">Realizadoras</div>   
-                </div>
-                <div class="col-xs-4 link">
-                    <div class="box icon"><img src="../img/icons/icon-organization.png"></div>
-                    <div class="box title">Organização</div>   
+</nav>
+<!--[End] NavBar-->
+
+<router-outlet></router-outlet>
+<!--[Start] NavBar-->
+<nav>
+    <div class="row navbar-mobile">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="row links">
+                    <div class="col-xs-4 link" (click)="goTo('index')">
+                        <div class="box icon"><img src="../assets/img/icons/icon-home.png"></div>
+                        <div class="box title">Home</div>   
+                    </div>
+                    <div class="col-xs-4 link" (click)="goTo('episodes')">
+                        <div class="box icon"><img src="../assets/img/icons/icon-headphone.png"></div>
+                        <div class="box title">Episódios</div>   
+                    </div>
+                    <div class="col-xs-4 link"(click)="goTo('hosts')">
+                        <div class="box icon"><img src="../assets/img/icons/icon-people.png"></div>
+                        <div class="box title">Realizadoras</div>   
+                    </div>
+                    <!-- <div class="col-xs-4 link" (click)="goTo('episodes')">
+                        <div class="box icon"><img src="../assets/img/icons/icon-organization.png"></div>
+                        <div class="box title">Organização</div>   
+                    </div> -->
+                    
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--[End] NavBar-->      
 </nav>
-
-<router-outlet></router-outlet>
+<!--[End] NavBar-->
 <footer>
     <div class="info">
         <div class="links">
-            <div class="link">Episódios</div>
-            <div class="link">Realizadoras</div>
-            <div class="link">Organização</div>
+            <div><a routerLink="/index">Home</a></div>
+            <div><a routerLink="/episodes">Episódios</a></div>
+            <div><a routerLink="/hosts">Realizadoras</a></div>
         </div>
         <div class="logo-small">
             <img src="../../../assets/img/logo.jpg">

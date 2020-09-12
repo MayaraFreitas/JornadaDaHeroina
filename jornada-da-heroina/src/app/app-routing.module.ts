@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { EpisodeComponent } from './pages/episode/episode.component';
 import { IndexComponent } from './pages/index/index/index.component';
+import { HostsComponent } from './pages/hosts/hosts/hosts.component';
+import { EpisodesComponent } from './pages/episodes/episodes/episodes.component';
+import { EpisodeComponent } from './pages/episodes/episode/episode.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'hosts', component: HostsComponent },
   { path: 'episode', component: EpisodeComponent },
+  { path: 'episodes', component: EpisodesComponent },
   { path: 'index', component: IndexComponent },
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
   ];
 
 @NgModule({

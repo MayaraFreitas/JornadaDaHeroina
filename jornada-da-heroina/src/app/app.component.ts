@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,9 +6,12 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'jornada-da-heroina';
   description = 'jornada-da-heroina';
+
+  @ViewChild('interviews') interviewsRef: ElementRef;
 
   constructor(private router: Router) {}
 

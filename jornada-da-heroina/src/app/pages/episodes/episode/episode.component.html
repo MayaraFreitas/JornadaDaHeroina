@@ -1,4 +1,4 @@
-<div class="content">
+<div *ngIf="episode" class="content">
     <section>
         <div class="vertical-title-container">
             <div id="episode-number" class="vertical-title">Episódio {{episode.index}}</div>
@@ -12,13 +12,9 @@
             <div class="interview-photo">
                 <img src="../../../assets/img/interviews/{{episode.photo ? episode.photo : 'undefined-person.png'}}">
                 <div class="work-function">{{episode.workFunction}}</div>
-                <div class="recording-time">Gravado em {{episode.publishDate}}</div>
+                <div class="recording-time">Gravado em {{episode.publishDate | date:'dd/MM/yyyy'}}</div>
             </div>
-            <!--
-            <div class="content-container">
-                <div id="" class="row">AAAAAAAAAAA</div>
-            </div>
-            -->
+            <app-player [episode]="'audio1.mp3'"></app-player>
             <div class="text-area section-title">
                 <h3>Sobre nosso papo</h3>
                 <p>

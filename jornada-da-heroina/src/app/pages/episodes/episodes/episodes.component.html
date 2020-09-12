@@ -1,0 +1,16 @@
+<div class="content">
+    <section>
+        <div class="vertical-title-container"><div class="vertical-title">Episódios</div></div>
+        <div class="section-content">
+            <div class="section-title">
+                <h3>Nós sentamos com essas heroínas para ouvir suas histórias</h3>
+                <h2>Ouça o que elas tem a dizer</h2>
+            </div>
+            <div *ngIf="interviews" class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let interview of interviews | async">
+                    <app-episode-card [interview]=interview></app-episode-card>
+                </div>
+            </div>
+        </div> 
+    </section>
+</div>

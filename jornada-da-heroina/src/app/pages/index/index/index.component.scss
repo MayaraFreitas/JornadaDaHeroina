@@ -19,7 +19,7 @@ button {
     padding-top: 20px;
     display: flex;
     align-items: center;
-    width: 500px;
+    max-width: 500px;
 
     img{
         width: 58px;
@@ -35,7 +35,7 @@ button {
     padding-top: 40px;
     display: flex;
     align-items: center;
-    width: 600px;
+    max-width: 600px;
 
     img{
         width: 98px;
@@ -47,3 +47,18 @@ button {
     }
 }
 
+@media(max-width: 768px) {
+    .logo {
+        .title{
+            font-size: 18px;
+        }
+        img{
+            width: 55px;
+            height: 55px;
+        }
+    }
+    .logo-big {
+        display: none;
+    }
+    
+}

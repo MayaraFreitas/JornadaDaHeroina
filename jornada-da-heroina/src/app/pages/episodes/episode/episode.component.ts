@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AngularFireDatabase } from '@angular/fire/database';
-import { map } from 'rxjs/operators';
-
-
 
 @Component({
   selector: 'app-episode',
@@ -19,9 +16,6 @@ export class EpisodeComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       this.db.object('/interviews/' + params.id).valueChanges().subscribe(interview => {
         this.episode = interview;
-        console.log('params: ', params.id);
-        console.log('interview: ', interview);
-        console.log('this.episode: ', this.episode);
       });
     });
   }

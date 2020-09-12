@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { InterviewCardModel } from '../models/interview-card-model';
 import { Router } from '@angular/router';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { InterviewCardModel } from '../../index/models/interview-card-model';
 
 @Component({
   selector: 'app-episode-card',

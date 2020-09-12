@@ -7,19 +7,21 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
-import { EpisodeComponent } from './pages/episode/episode.component';
 import { IndexModule } from './pages/index/index.module';
+import { HostModule } from './pages/hosts/host.module';
+import { EpisodesModule } from './pages/episodes/episodes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    EpisodeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     IndexModule,
+    EpisodesModule,
+    HostModule,
     AngularFireModule.initializeApp(environment.firebase, 'jornada-da-heroina'),
     AngularFireDatabaseModule,
     AppRoutingModule
