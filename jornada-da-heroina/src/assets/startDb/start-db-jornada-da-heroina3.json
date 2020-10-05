@@ -1,0 +1,115 @@
+{
+	"hosts": [
+	{
+		"name": "Mayara Alves Freitas",
+		"function": "Software Developer",
+		"description": "Estudante de Engenharia de Computação, convertedora de cafeína em código, amante de tecnologia e defensora da igualdade de gênero",
+		"photo": "mayara.jpg"
+    },
+    {
+		"name": "Aline Roberta Argentin",
+		"function": "Suporte técnico",
+		"description": "Trabalho em uma empresa de desenvolvimento de sistemas , estou cursando o último ano em Engenharia da Computação no Unisal. Gosto muito de coelho, passarinho gato e cachorro",
+		"photo": "aline.jpg"
+    },
+    {
+		"name": "Laís Furlan Ferreira",
+		"function": "Analista de sistemas ",
+		"description": "Sou estudante de Analise e Desenvolvimento de Sistemas e atualmente trabalho na parte de teste de softwares. Sou uma pessoa criativa, animada, tagarela e sempre disposta a ajudar os outros.",
+		"photo": "lais.jpg"
+    },
+    {
+		"name": "Beatriz Domingos Yamamoto",
+		"function": "Estagiária",
+		"description": "Cursando terceiro semestre de Engenharia Elétrica no Unisal. Apaixonada por elétrica, matemática, inovação e desafios. Decidida a ir contra todo o preconceito e machismo existentes com mulheres nessa área.",
+		"photo": "beatriz.jpg"
+    }
+  ],
+  "organization":[
+	  {
+		"text": "Algumas alunas do campus que sentiam falta de mais mulheres nos cursos de tecnologia, levaram ao coordenador a ideia de incentivar as mulheres a não desistirem do curso. Foi assim que surgiu o grupo 'Mais Mulheres na Tecnologia'."
+	  },
+	  {
+		"text": "A partir desse grupo nasceu o GIIMT (Grupo de Inclusão e Incentivo de Mulheres na Tecnologia), um sub-grupo de iniciação científica com a proposta de trazer conteúdos técnicos, envolvendo carreira, cursos, palestras para capacitar e dar mais segurança para as mulheres que pretendem seguir no ramo de tecnologia."
+	  },
+	  {
+		"text": "Dentre os projetos planejados, a plataforma tem como proposta trazer mulheres de todas as idades, funções e níveis para um bate-papo, expondo para as ouvintes as barreiras, incertezas e felicidades durante a carreira profissional, retirando a visão distorcida que muitas vezes nós temos sobre o caminho a ser percorrido."
+	  },
+	  {
+		"text": "Infelizmente durante o primeiro semestre de 2020 a professora orientadora Dra. Magda Vieira da Silva Oliveira nos deixou. Todos nós do GIIMT gostaríamos de utilizar esse espaço para agradecê-la, pois  esse projeto sequer teria nascido ou saído do papel sem a sua grande força de vontade. É com um grande peso no coração que deixamos aqui o nosso muito obrigado, e não deixaremos esse projeto morrer."
+	  }
+  ],
+  "interviews": [
+	{
+		"index": 1,
+		"name": "Nome da Entrevistada 1",
+		"workFunction": "Dev. Back End",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ipsum augue. Aliquam nec iaculis eros. Suspendisse potenti.",
+		"companyName": "Nome da empresa",
+		"photo": "heroina-1.jpg",
+		"publishDate": "2020-01-08T10:00:00.000Z"
+	},
+	{
+		"index": 2,
+		"name": "Nome da Entrevistada 2",
+		"workFunction": "UX/Designer",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ipsum augue. Aliquam nec iaculis eros. Suspendisse potenti.",
+		"companyName": "Nome da empresa",
+		"photo": "heroina-2.jpg",
+		"publishDate": "2020-01-08T10:00:00.000Z"
+	},
+	{
+		"index": 3,
+		"name": "Nome da Entrevistada 3",
+		"workFunction": "DBA",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ipsum augue. Aliquam nec iaculis eros. Suspendisse potenti.",
+		"companyName": "Nome da empresa",
+		"photo": "heroina-3.jpg",
+		"publishDate": "2020-01-08T10:00:00.000Z"
+	},
+	{
+		"index": 4,
+		"name": "Nome da Entrevistada 4",
+		"workFunction": "Dev. Front End",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ipsum augue. Aliquam nec iaculis eros. Suspendisse potenti.",
+		"companyName": "Nome da empresa",
+		"photo": "heroina-4.jpg",
+		"publishDate": "2020-01-08T10:00:00.000Z"
+	},
+	{
+		"index": 5,
+		"name": "Nome da Entrevistada 5",
+		"workFunction": "Quality",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ipsum augue. Aliquam nec iaculis eros. Suspendisse potenti.",
+		"companyName": "Nome da empresa",
+		"photo": "heroina-5.jpg",
+		"publishDate": "2020-01-08T10:00:00.000Z"
+	},
+	{
+		"index": 6,
+		"name": "Nome da Entrevistada 6",
+		"workFunction": "Gestora de Projetos",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in ipsum augue. Aliquam nec iaculis eros. Suspendisse potenti.",
+		"companyName": "Nome da empresa",
+		"photo": "",
+		"publishDate": "2020-01-08T10:00:00.000Z"
+	}
+  ],
+  "recommendations": [
+	{
+		"name": "PodProgramar",
+		"photo": "podprogamar.jpg",
+		"link": "https://podprogramar.com.br/"
+	},
+	{
+		"name": "Pyladies Brasil",
+		"photo": "pyladies-brasil.png",
+		"link": "https://brasil.pyladies.com/"
+	},
+	{
+		"name": "WoMakers Code",
+		"photo": "womakerscode.png",
+		"link": "https://womakerscode.org/"
+	}
+  ]
+}

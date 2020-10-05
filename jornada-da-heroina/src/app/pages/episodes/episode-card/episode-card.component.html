@@ -1,12 +1,15 @@
-<div class="box organization-card pointer" (click)="gotoEpisode(interview.index)">
-    <div class="photo"><img src="../../../assets/img/interviews/{{interview.photo ? interview.photo : 'undefined-person.png'}}"></div>
-    <div class="episode-info">
-        <div class="epp-number">#{{interview.index}}</div>
-        <div class="title">HEROÍNA</div>
-        <div class="name">{{interview.name}}</div>
-        <div class="work-function">{{interview.workFunction}}</div>
-        <div class="description">{{interview.description}}</div>
-        <div class="company-name">{{interview.companyName}}</div>
+<div class="cover">
+    <div class="box organization-card pointer" (click)="gotoEpisode(interview.index)">
+        <div class="photo">
+            <img src="../../../assets/img/interviews/{{interview.photo ? interview.photo : 'undefined-person.png'}}">
+        </div>
+        <div class="episode-info">
+            <div class="epp-number">#{{interview.index}}</div>
+            <div class="title">HEROÍNA</div>
+            <div class="name">{{interview.name}}</div>
+            <div class="work-function">{{interview.workFunction}}</div>
+            <div class="description">{{interview.description}}</div>
+            <div class="company-name">{{interview.companyName}}</div>
+        </div>
     </div>
 </div>
-

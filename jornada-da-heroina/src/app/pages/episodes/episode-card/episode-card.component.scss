@@ -1,8 +1,11 @@
+.cover {
+    min-height: 230px;
+}
 
 .organization-card{
     display: flex;
     -webkit-box-align: center;
-    margin-top: 15px;
+    
     background: var(--orange);
     min-width: 300px;
     min-height: 180px;
@@ -79,7 +82,14 @@
             color: var(--red);
         }
     }
-    
+ 
+    &:hover {
+        transition: all 0.05s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -1px;
+        border: 1px solid #FDAC94;
+        //background-color: #FFC7B7;
+    }
 }
 
 .organization-card:hover{

@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { IndexModule } from './pages/index/index.module';
 import { HostModule } from './pages/hosts/host.module';
 import { EpisodesModule } from './pages/episodes/episodes.module';
+import { RecommendationModule } from './pages/recommendations/recommendation/recommendation.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EpisodesModule } from './pages/episodes/episodes.module';
     HttpClientModule,
     IndexModule,
     EpisodesModule,
+    RecommendationModule,
     HostModule,
     AngularFireModule.initializeApp(environment.firebase, 'jornada-da-heroina'),
     AngularFireDatabaseModule,
