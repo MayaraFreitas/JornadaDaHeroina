@@ -97,14 +97,54 @@
   ],
   "recommendations": [
 	{
+		"name": "Ada.vc",
+		"photo": "ada-vc.jpg",
+		"link": "https://ada.vc/"
+	},
+	{
+		"name": "Codamos",
+		"photo": "codamos.jpeg",
+		"link": "https://www.codamos.club/"
+	},
+	{
+		"name": "[des]programe",
+		"photo": "desprograme.jpg",
+		"link": "https://desprograme.com.br/pt/"
+	},
+	{
+		"name": "InfoPreta",
+		"photo": "infopreta.jpg",
+		"link": "https://infopreta.com.br/"
+	},
+	{
+		"name": "PhpWomen",
+		"photo": "phpwomen.jpg",
+		"link": "https://phpwomen.org.br/"
+	},
+	{
 		"name": "PodProgramar",
 		"photo": "podprogamar.jpg",
 		"link": "https://podprogramar.com.br/"
 	},
 	{
+		"name": "Progra{m}aria",
+		"photo": "programaria.jpg",
+		"link": "https://www.programaria.org/"
+	},
+	{
 		"name": "Pyladies Brasil",
 		"photo": "pyladies-brasil.png",
 		"link": "https://brasil.pyladies.com/"
+	},
+	{
+		"name": "Mais Mulheres na Computação",
+		"photo": "mulheresnacomputacao.jpg",
+		"link": "https://mulheresnacomputacao.com/"
+	},
+	{
+		"name": "Reprograma",
+		"photo": "reprograma.jpg",
+		"link": "https://reprograma.com.br/"
 	},
 	{
 		"name": "WoMakers Code",

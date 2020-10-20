@@ -1,108 +1,88 @@
-.cover {
-    min-height: 230px;
-}
-
-.organization-card{
+.card {
+    position: relative;
     display: flex;
-    -webkit-box-align: center;
-    
-    background: var(--orange);
-    min-width: 300px;
-    min-height: 180px;
-   
-    .photo{
-        //width: 40%;
-        max-width: 200px;
-        //height: 100%;
-        img{
-            height: 100%;
-            width: 100%;
-        }
-        
-        background: var(--super-dark-orange);
+  	margin:2% 5px 2% 5px;
+  	background: var(--orange);
+	padding:0;
+	min-width:400px;
+    max-width:700px;
+
+    &:hover {        
+            transition: box-shadow .25s;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     }
+}
 
-    .episode-info{
-        //width: 60%;
-        position: relative;
-        
-        div{
-            margin-left: 16px;
-        }
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width:200px;
+  height:200px;
+}
 
-        .epp-number{
-            position: absolute;
-            top: 3px;
-            right: 8px;
-            font-size: 27px;
-            font-weight: 900;
-            color: var(--red);
-        }
+.card .card-image {
+  position: relative;
+}
 
-        .title{
+.card .episode-info{
+    padding-left: 16px;
+}
+
+.epp-number{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    font-size: 27px;
+    font-weight: 900;
+    color: var(--red);
+}
+
+.title{
             
-            padding-top: 16px;
-            font-size: 17px;
-            color: var(--red);
-        }
-
-        .name{
-            padding-top: 4px;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 30px;
-            color: var(--super-dark-blue);
-        }
-
-        .work-function{
-            padding-top: 4px;
-            font-size: 21px;
-            line-height: 23px;
-            color: var(--super-dark-blue);
-        }
-
-        .description{
-            padding-top: 8px;
-            padding-right: 16px;
-            font-size: 14px;
-            line-height: 18px;
-
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-        }
-
-        .company-name{
-            position: absolute;
-            bottom: 16px;
-            font-size: 16px;
-            line-height: 16px;
-            color: var(--red);
-        }
-    }
- 
-    &:hover {
-        transition: all 0.05s ease-out;
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-        top: -1px;
-        border: 1px solid #FDAC94;
-        //background-color: #FFC7B7;
-    }
+    padding-top: 16px;
+    
+    font-size: 18px;
+    color: var(--red);
 }
 
-.organization-card:hover{
-    background: var(--dark-orange);
+.name{
+    padding-top: 4px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--super-dark-blue);
 }
 
-@media(max-width: 768px) {
-    .organization-card .episode-info{
-        .epp-number {
-            font-size: 24px;
-        }
-        .name {
-            font-size: 21px;
-        }
-    }
+.work-function{
+    padding-top: 4px;
+    font-size: 21px;
+    line-height: 23px;
+    color: var(--super-dark-blue);
 }
+
+.description{
+    padding-top: 8px;
+    padding-right: 16px;
+    font-size: 14px;
+    line-height: 18px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+// .company-name{
+//     position: absolute;
+//     bottom: 16px;
+//     font-size: 16px;
+//     line-height: 16px;
+//     color: var(--red);
+// }

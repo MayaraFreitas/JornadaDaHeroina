@@ -15,4 +15,8 @@ export class RecommendationCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToUrl(url: string){
+    window.location.href = url;
+  }
+
 }

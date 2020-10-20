@@ -1,10 +1,9 @@
-
-<div class="cover">
-    <div class="box card pointer">
-        <div class="photo"><img src="../../../../../assets/img/recommendations/{{recommendation.photo ? recommendation.photo : 'undefined-person.png'}}"></div>
-        <div class="info">
-            <div class="title">{{recommendation.name}}</div>
-        </div>
+<div class="card pointer" (click)="goToUrl(recommendation.link)">
+    <div class="card__image">
+    <img src="../../../../../assets/img/recommendations/{{recommendation.photo ? recommendation.photo : 'undefined-person.png'}}">
+    </div>
+    <div class="card__content">
+        <div class="title">{{recommendation.name}}</div>
     </div>
 </div>
-
+ 

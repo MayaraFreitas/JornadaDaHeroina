@@ -7,7 +7,7 @@
                 <h2>Ouça o que elas tem a dizer</h2>
             </div>
             <div *ngIf="interviews" class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let interview of interviews | async">
+                <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let interview of interviews | async">
                     <app-episode-card [interview]=interview></app-episode-card>
                 </div>
             </div>
