@@ -11,6 +11,7 @@ import { IndexModule } from './pages/index/index.module';
 import { HostModule } from './pages/hosts/host.module';
 import { EpisodesModule } from './pages/episodes/episodes.module';
 import { RecommendationModule } from './pages/recommendations/recommendation/recommendation.module';
+import { SharedModule } from './pages/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RecommendationModule } from './pages/recommendations/recommendation/rec
   imports: [
     BrowserModule,
     HttpClientModule,
+    SharedModule,
     IndexModule,
     EpisodesModule,
     RecommendationModule,
