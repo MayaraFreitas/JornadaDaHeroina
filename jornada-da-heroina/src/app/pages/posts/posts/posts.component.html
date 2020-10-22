@@ -1,1 +1,16 @@
-<p>posts works!</p>
+
+<div class="content">
+    <section>
+        <div class="vertical-title-container"><div class="vertical-title">Artigos</div></div>
+        <div class="section-content">
+            <div class="section-title">
+                <h2 class="page-title">Artigos</h2>
+            </div>
+            <div *ngIf="posts" class="row">
+                <div class="card-area col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor='let post of posts | async'>
+                    <app-generic-card [genericCardModel]="post" [imageFolder]="'posts'"></app-generic-card>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

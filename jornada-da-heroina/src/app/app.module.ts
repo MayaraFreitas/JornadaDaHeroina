@@ -12,6 +12,7 @@ import { HostModule } from './pages/hosts/host.module';
 import { EpisodesModule } from './pages/episodes/episodes.module';
 import { RecommendationModule } from './pages/recommendations/recommendation/recommendation.module';
 import { SharedModule } from './pages/shared/shared.module';
+import { PostsModule } from './pages/posts/posts.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SharedModule } from './pages/shared/shared.module';
     EpisodesModule,
     RecommendationModule,
     HostModule,
+    PostsModule,
     AngularFireModule.initializeApp(environment.firebase, 'jornada-da-heroina'),
     AngularFireDatabaseModule,
     AppRoutingModule

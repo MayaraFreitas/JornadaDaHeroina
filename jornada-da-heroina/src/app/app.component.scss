@@ -2,16 +2,19 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 294px;
+    height: 250px;
     background-color: var(--super-dark-blue);
     
 
-    .info{
+    .info {
+        height: 100%;
         padding-left: 30px;
+        justify-content: space-between;
+        display: flex;
     }
 
     .links{
-        padding-top: 30px;
+        padding-top: 20px;
         line-height: 19px;
         
         div {
@@ -24,8 +27,8 @@ footer{
         }
     }
 
-    .logo-small{
-        padding-top: 25px;
+    .logo-footer{
+        margin-right: 60px;
         display: flex;
         align-items: center;
         max-width: 500px;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/database';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-posts',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
+  posts = new Observable<any[]>();
+  constructor(public db: AngularFireDatabase) {
+    this.posts = db.list('/posts').valueChanges();
+  }
 
   ngOnInit(): void {
   }

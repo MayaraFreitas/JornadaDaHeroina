@@ -19,7 +19,7 @@
 		"photo": "lais.jpg"
     },
     {
-		"name": "Beatriz Domingos Yamamoto",
+		"name": "Beatriz D. Yamamoto",
 		"function": "Estagiária",
 		"description": "Cursando terceiro semestre de Engenharia Elétrica no Unisal. Apaixonada por elétrica, matemática, inovação e desafios. Decidida a ir contra todo o preconceito e machismo existentes com mulheres nessa área.",
 		"photo": "beatriz.jpg"
@@ -151,5 +151,12 @@
 		"photo": "womakerscode.png",
 		"link": "https://womakerscode.org/"
 	}
-  ]
+  ],
+	"posts": [
+		{
+			"name": "Como começar a programar?",
+			"photo": "comecar-a-programar.jpg",
+			"link": "https://medium.com/"
+		}
+	]
 }

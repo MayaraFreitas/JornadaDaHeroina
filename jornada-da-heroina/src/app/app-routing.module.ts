@@ -6,6 +6,7 @@ import { HostsComponent } from './pages/hosts/hosts/hosts.component';
 import { EpisodesComponent } from './pages/episodes/episodes/episodes.component';
 import { EpisodeComponent } from './pages/episodes/episode/episode.component';
 import { RecommendationsComponent } from './pages/recommendations/recommendation/recommendations/recommendations.component';
+import { PostsComponent } from './pages/posts/posts/posts.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'episodes', component: EpisodesComponent },
   { path: 'index', component: IndexComponent },
   { path: 'recommendations', component: RecommendationsComponent },
+  { path: 'posts', component: PostsComponent },
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   ];
 
