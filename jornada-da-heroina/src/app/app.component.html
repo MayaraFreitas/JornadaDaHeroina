@@ -1,60 +1,26 @@
-
- <!--[Start] NavBar-->
-<nav>
- <div class="row navbar-desktop">
-    <div class="col-xs-1" (click)="goTo('index')">
-        <div class="box title pointer">
-            <span class="">Jordana da<br><span class="large-title">Heroína</span></span>
-        </div>
+<header class="header row">
+    <div class="col-xs-1 pointer" (click)="goTo('index')">
+        <span class="title">Jordana da<br><span class="large-title">Heroína</span></span>
     </div>
     <div class="col-xs-11">
-        <div class="box">
-            <a routerLink="/hosts">Hosts</a>
-            <a routerLink="/episodes">Episódios</a>
-            <a routerLink="/recommendations">Recomentações</a>
-        </div>
+        <input #checkboxMenu class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><span class="home-button pointer" (click)="onClickMenu('index')">Home</span></li>
+            <li><span class="pointer" (click)="onClickMenu('episodes')">Episódios</span></li>
+            <li><span class="pointer" (click)="onClickMenu('hosts')">Realizadoras</span></li>
+            <li><span class="pointer" (click)="onClickMenu('recommendations')">Recomendações</span></li>
+        </ul>
     </div>
-</div>
-</nav>
-<!--[End] NavBar-->
-
+</header>
 <router-outlet></router-outlet>
-<!--[Start] NavBar-->
-<nav>
-    <div class="row navbar-mobile">
-        <div class="col-xs-12">
-            <div class="box">
-                <div class="row links">
-                    <div class="col-xs-4 link" (click)="goTo('index')">
-                        <div class="box icon"><img src="../assets/img/icons/icon-home.png"></div>
-                        <div class="box title">Home</div>   
-                    </div>
-                    <div class="col-xs-4 link" (click)="goTo('episodes')">
-                        <div class="box icon"><img src="../assets/img/icons/icon-headphone.png"></div>
-                        <div class="box title">Episódios</div>   
-                    </div>
-                    <div class="col-xs-4 link"(click)="goTo('hosts')">
-                        <div class="box icon"><img src="../assets/img/icons/icon-people.png"></div>
-                        <div class="box title">Realizadoras</div>   
-                    </div>
-                    <!-- <div class="col-xs-4 link" (click)="goTo('episodes')">
-                        <div class="box icon"><img src="../assets/img/icons/icon-organization.png"></div>
-                        <div class="box title">Organização</div>   
-                    </div> -->
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-<!--[End] NavBar-->
 <footer>
     <div class="info">
         <div class="links">
             <div><a routerLink="/index">Home</a></div>
             <div><a routerLink="/episodes">Episódios</a></div>
             <div><a routerLink="/hosts">Realizadoras</a></div>
-            <div><a routerLink="/recommendations">Recomentações</a></div>
+            <div><a routerLink="/recommendations">Recomendações</a></div>
         </div>
         <div class="logo-small">
             <img src="../../../assets/img/logo.jpg">

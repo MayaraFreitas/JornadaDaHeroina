@@ -12,6 +12,7 @@ export class AppComponent {
   description = 'jornada-da-heroina';
 
   @ViewChild('interviews') interviewsRef: ElementRef;
+  @ViewChild('checkboxMenu') checkboxMenu: ElementRef;
 
   constructor(private router: Router) {}
 
@@ -21,5 +22,10 @@ export class AppComponent {
 
   goTo(route: string) {
     this.router.navigate(['/' + route]);
+  }
+
+  onClickMenu(route: string) {
+    this.checkboxMenu.nativeElement.checked = false;
+    this.goTo(route);
   }
 }

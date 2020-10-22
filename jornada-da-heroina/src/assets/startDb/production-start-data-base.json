@@ -19,7 +19,7 @@
 		"photo": "lais.jpg"
     },
     {
-		"name": "Beatriz Domingos Yamamoto",
+		"name": "Beatriz D. Yamamoto",
 		"function": "Estagiária",
 		"description": "Cursando terceiro semestre de Engenharia Elétrica no Unisal. Apaixonada por elétrica, matemática, inovação e desafios. Decidida a ir contra todo o preconceito e machismo existentes com mulheres nessa área.",
 		"photo": "beatriz.jpg"
@@ -39,5 +39,62 @@
 		"text": "Infelizmente durante o primeiro semestre de 2020 a professora orientadora Dra. Magda Vieira da Silva Oliveira nos deixou. Todos nós do GIIMT gostaríamos de utilizar esse espaço para agradecê-la, pois  esse projeto sequer teria nascido ou saído do papel sem a sua grande força de vontade. É com um grande peso no coração que deixamos aqui o nosso muito obrigado, e não deixaremos esse projeto morrer."
 	  }
   ],
-  "interviews": []
+  "interviews": [],
+  "recommendations": [
+	{
+		"name": "Ada.vc",
+		"photo": "ada-vc.jpg",
+		"link": "https://ada.vc/"
+	},
+	{
+		"name": "Codamos",
+		"photo": "codamos.jpeg",
+		"link": "https://www.codamos.club/"
+	},
+	{
+		"name": "[des]programe",
+		"photo": "desprograme.jpg",
+		"link": "https://desprograme.com.br/pt/"
+	},
+	{
+		"name": "InfoPreta",
+		"photo": "infopreta.jpg",
+		"link": "https://infopreta.com.br/"
+	},
+	{
+		"name": "PhpWomen",
+		"photo": "phpwomen.jpg",
+		"link": "https://phpwomen.org.br/"
+	},
+	{
+		"name": "PodProgramar",
+		"photo": "podprogamar.jpg",
+		"link": "https://podprogramar.com.br/"
+	},
+	{
+		"name": "Progra{m}aria",
+		"photo": "programaria.jpg",
+		"link": "https://www.programaria.org/"
+	},
+	{
+		"name": "Pyladies Brasil",
+		"photo": "pyladies-brasil.png",
+		"link": "https://brasil.pyladies.com/"
+	},
+	{
+		"name": "Mais Mulheres na Computação",
+		"photo": "mulheresnacomputacao.jpg",
+		"link": "https://mulheresnacomputacao.com/"
+	},
+	{
+		"name": "Reprograma",
+		"photo": "reprograma.jpg",
+		"link": "https://reprograma.com.br/"
+	},
+	{
+		"name": "WoMakers Code",
+		"photo": "womakerscode.png",
+		"link": "https://womakerscode.org/"
+	}
+  ]
 }

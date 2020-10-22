@@ -140,6 +140,22 @@ section {
     .vertical-title-container {
         display: none;  
     }
+
+    section .section-title {
+        h2 {
+            font-size: 1.7rem;
+        }
+    
+        h2.page-title {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+@media(min-width: 570px) {
+    section  .section-title {
+        display: none;  
+    }
 }
 
 @media(max-width: 768px) {
@@ -147,7 +163,7 @@ section {
         padding-bottom: 85px; 
     }
 
-    section .section-content{
+    section .section-content {
         margin-left: 0px;
     }
 
@@ -162,7 +178,11 @@ section {
         }
     }
     h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
     
 }

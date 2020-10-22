@@ -3,10 +3,10 @@
         <div class="vertical-title-container"><div class="vertical-title">Hosts</div></div>
         <div class="section-content">
             <div class="section-title">
-                <h2>Realizadoras</h2>
+                <h2 class="page-title">Realizadoras</h2>
             </div>
             <div *ngIf="hosts" class="row">
-                <div class="col-xs-12 col-md-6" *ngFor="let host of hosts | async">
+                <div class="host-area col-xs-12 col-md-6" *ngFor="let host of hosts | async">
                     <app-host-card [host]=host></app-host-card>
                 </div>
             </div>
