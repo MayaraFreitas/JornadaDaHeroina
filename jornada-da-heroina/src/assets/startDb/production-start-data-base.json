@@ -95,6 +95,63 @@
 		"name": "WoMakers Code",
 		"photo": "womakerscode.png",
 		"link": "https://womakerscode.org/"
+	},
+	{
+		"name": "Pizza de Dados",
+		"photo": "pizza-dados.jpg",
+		"link": "https://pizzadedados.com/"
+	},
+	{
+		"name": "Mulheres na Tecnologia",
+		"photo": "hipsters.png",
+		"link": "https://hipsters.tech/mulheres-na-tecnologia-hipsters-34/"
+	},
+	{
+		"name": "Mulheres de Produto",
+		"photo": "mulheres-de-produto.jpg",
+		"link": "https://mulheresdeproduto.com/"
+	},
+	{
+		"name": "Loiane Training",
+		"photo": "java-angular.png",
+		"link": "https://loiane.training/"
+	},
+	{
+		"name": "MMT",
+		"photo": "mmt.jpg",
+		"link": "https://www.instagram.com/oficial_mmt/"
+	},
+	{
+		"name": "Onu Mulherees",
+		"photo": "onu-mulheres.jpg",
+		"link": "http://www.onumulheres.org.br/"
 	}
-  ]
+  ],
+  "posts": [
+		{
+			"name": "Como começar a programar?",
+			"photo": "comecar-a-programar.jpg",
+			"link": "https://medium.com/@bext.sal.mmt/como-come%C3%A7ar-a-programar-15b0be7b5a20"
+		},
+		{
+			"name": "Trabalhar com tecnologia",
+			"photo": "trabalho-tecnologia.jpeg",
+			"link": "https://medium.com/@bext.sal.mmt/%C3%A9-preciso-saber-programar-para-trabalhar-na-%C3%A1rea-tecnol%C3%B3gica-663bdd450e00"
+		},
+    {
+      "name": "Acessibilidade e a técnologia",
+      "photo": "acessibilidade.png",
+      "link": "https://bext-sal-mmt.medium.com/acessibilidade-e-a-tecnologia-ae3b82b7fb55"
+    },
+    {
+      "name": "O que é tecnologia",
+      "photo": "tecnologia.jpg",
+      "link": "https://bext-sal-mmt.medium.com/o-que-%C3%A9-tecnologia-cd48504c7122"
+    },
+		{
+			"name": "Como montar o seu currículo",
+			"photo": "curriculo.jpg",
+			"link": "https://medium.com/@bext.sal.mmt/curr%C3%ADculo-547e80708cff/"
+		}
+	]
 }
